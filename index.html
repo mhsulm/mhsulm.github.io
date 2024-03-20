@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            position: relative;
+            background-image: url('anime_background.jpg'); /* Ganti dengan gambar anime yang kamu punya */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        h1 {
+            color: #ff0066;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .emojis {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .emoji {
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .emoji:hover {
+            transform: scale(1.2);
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            animation: confetti 1s linear infinite;
+        }
+        @keyframes confetti {
+            0% {
+                transform: translateY(0) rotateZ(0);
+            }
+            100% {
+                transform: translateY(100vh) rotateZ(360deg);
+            }
+        }
+        .balloon {
+            position: absolute;
+            width: 80px;
+            height: auto;
+            animation: balloon 4s ease-out infinite alternate;
+        }
+        @keyframes balloon {
+            0% {
+                transform: translateY(0) rotateZ(0);
+            }
+            100% {
+                transform: translateY(-100vh) rotateZ(360deg);
+            }
+        }
+        .marquee {
+            color: #ff0066;
+            font-size: 24px;
+            margin-bottom: 20px;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Birthday, [Aya]! 🎂</h1>
+        <div class="emojis">
+            <span class="emoji" onclick="react('😢')">😢</span> <!-- Emoji Terharu -->
+            <span class="emoji" onclick="react('😊')">😊</span> <!-- Emoji Senang -->
+            <span class="emoji" onclick="react('😍')">😍</span> <!-- Emoji Cinta -->
+        </div>
+        <div class="marquee">Selamat ulang tahun sayangku, cintaku, seluruh hidupku, Aya-ku <3</div>
+        <p> Just wanted to drop you a little birthday love and let you know how much you mean to me :p I feel incredibly lucky to have you in my life, and I can't imagine going through life's up and downs without you :( Terima kasih banyak sudah mau jadi kawan nd selama 5 tahun ini. Nd kada kawa membayangkan mun hari itu nd kd ngajak nyawa kenalan dan salaman wkwkwk. Walopun waktu itu panas menggantang, nd kada bakal mau ngubah harinya karna hari itu nyawa datang ke hidup nd (anjai). </p>
+        <img src="birthday_picture2.jpeg" alt="Birthday Picture 2">
+        <p> Shoutout to MaDew for bringing you into this world, because without her, I wouldn't have my partner in crime, my shoulder to lean on, and my forever source of laughter :D Tanyain ke sidin kapan nd diadopsi :(</p>
+    </div>
+<p> On your special day, don't forget  to give yourself a pat-pat on the  back and say thanks to yourself for being so freaking awesome ^^ You've been through a lot, but here you are, still standing strong, and I couldn't be prouder!!!! Here's to more memories that we'll cherish foerever. OH BTW you gotta stuck with me for my life :p HAPPIEST BIRTHDAY, AYA <3</p>
+    </div>
+<p> WITH MUCH LOVE, NISAH PRESIDEN PEKAUMAN</p>
+    </div>
+    <!-- Confetti -->
+    <div class="confetti" style="top: -10px; left: 10%;"></div>
+    <div class="confetti" style="top: -20px; left: 20%;"></div>
+    <div class="confetti" style="top: -30px; left: 30%;"></div>
+    <div class="confetti" style="top: -40px; left: 40%;"></div>
+    <div class="confetti" style="top: -50px; left: 50%;"></div>
+    <!-- Add more confetti -->
+    <!-- Balloons -->
+    <img src="balloon.png" alt="Balloon" class="balloon" style="top: 80%; left: 10%;">
+    <img src="balloon.png" alt="Balloon" class="balloon" style="top: 90%; left: 20%;">
+    <img src="balloon.png" alt="Balloon" class="balloon" style="top: 70%; left: 30%;">
+    <img src="balloon.png" alt="Balloon" class="balloon" style="top: 50%; right: 10%;"> <!-- Balon di sebelah kanan -->
+    <!-- Add more balloons -->
+    <!-- Birthday Audio -->
+    <audio controls autoplay loop>
+        <source src="birthday_song.mpeg" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+<script>
+    function react(emoji) {
+        alert("Anda memilih reaksi: " + emoji);
+    }
+</script>
+</html>
